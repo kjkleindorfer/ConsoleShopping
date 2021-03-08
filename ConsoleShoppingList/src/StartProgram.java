@@ -12,15 +12,13 @@ public class StartProgram {
 		static ListItemHelper lih = new ListItemHelper();
 
 		private static void addAnItem() {
-			
-			ListItem toAdd = new ListIem(store, item);
-			lih.insertItem(toAdd);
 			// TODO Auto-generated method stub
 			System.out.print("Enter a store: ");
 			String store = in.nextLine();
 			System.out.print("Enter an item: ");
 			String item = in.nextLine();
-
+			ListItem toAdd = new ListItem(store, item);
+			lih.insertItem(toAdd);
 		}
 
 		private static void deleteAnItem() {
